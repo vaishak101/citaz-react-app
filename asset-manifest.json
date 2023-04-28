@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/citaz-react-app/static/css/main.6eb1751f.css",
+    "main.css": "/citaz-react-app/static/css/main.4447c3f0.css",
     "main.js": "/citaz-react-app/static/js/main.42f04870.js",
     "static/js/787.a6d604eb.chunk.js": "/citaz-react-app/static/js/787.a6d604eb.chunk.js",
     "static/media/hero.jpg": "/citaz-react-app/static/media/hero.4ba6bd1ed160eb347494.jpg",
@@ -10,12 +10,12 @@
     "static/media/feature-4.jpg": "/citaz-react-app/static/media/feature-4.43584166d454708c46d5.jpg",
     "static/media/feature-2.jpg": "/citaz-react-app/static/media/feature-2.5ea894d93d19f4a582ed.jpg",
     "index.html": "/citaz-react-app/index.html",
-    "main.6eb1751f.css.map": "/citaz-react-app/static/css/main.6eb1751f.css.map",
+    "main.4447c3f0.css.map": "/citaz-react-app/static/css/main.4447c3f0.css.map",
     "main.42f04870.js.map": "/citaz-react-app/static/js/main.42f04870.js.map",
     "787.a6d604eb.chunk.js.map": "/citaz-react-app/static/js/787.a6d604eb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6eb1751f.css",
+    "static/css/main.4447c3f0.css",
     "static/js/main.42f04870.js"
   ]
 }
