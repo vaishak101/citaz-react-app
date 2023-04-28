@@ -63,9 +63,6 @@ function Testimonial() {
   };
 
 
-
-
-
   return (
     <section className="testimonials section" id="testimonials">
       <div className="container">
@@ -78,7 +75,7 @@ function Testimonial() {
         <div className="slider">
           <div className="slide">
             <div className="slide_content">
-              <img src={u1} className="slide_content__img u-margin-bottom-small" alt="User Image" />
+              <img src={u1} className="slide_content__img u-margin-bottom-small" alt="User 1" />
               <h2 className="slide_content__name u-margin-bottom-medium">
                 Lewis Joseph
               </h2>
@@ -94,7 +91,7 @@ function Testimonial() {
           </div>
           <div className="slide">
             <div className="slide_content">
-              <img src={u2} className="slide_content__img u-margin-bottom-small" alt="User Image" />
+              <img src={u2} className="slide_content__img u-margin-bottom-small" alt="User 2" />
               <h2 className="slide_content__name u-margin-bottom-medium">
                 Clarence Hansen
               </h2>
@@ -110,7 +107,7 @@ function Testimonial() {
           </div>
           <div className="slide">
             <div className="slide_content">
-              <img src={u3} className="slide_content__img u-margin-bottom-small" alt="User Image" />
+              <img src={u3} className="slide_content__img u-margin-bottom-small" alt="User 3" />
               <h2 className="slide_content__name u-margin-bottom-medium">
                 Jessie Hall
               </h2>
@@ -126,7 +123,7 @@ function Testimonial() {
           </div>
           <div className="slide">
             <div className="slide_content">
-              <img src={u4} className="slide_content__img u-margin-bottom-small" alt="User Image" />
+              <img src={u4} className="slide_content__img u-margin-bottom-small" alt="User 4" />
               <h2 className="slide_content__name u-margin-bottom-medium">
                 Charlie Hill
               </h2>
@@ -142,7 +139,7 @@ function Testimonial() {
           </div>
           <div className="slide">
             <div className="slide_content">
-              <img src={u5} className="slide_content__img u-margin-bottom-small" alt="User Image" />
+              <img src={u5} className="slide_content__img u-margin-bottom-small" alt="User 5" />
               <h2 className="slide_content__name u-margin-bottom-medium">
                 Shannon Romero
               </h2>

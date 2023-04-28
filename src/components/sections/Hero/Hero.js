@@ -9,7 +9,7 @@ function Hero() {
         <Header />
         <div className="hero">
           <div className="img_wrap">
-            <img src={HeroImg} className="hero__img" alt="Hero Image" />
+            <img src={HeroImg} className="hero__img" alt="Hero" />
           </div>
           <div className="hero__text-box">
             <h1 className="heading-primary">Your Ideal Banking Partner</h1>

@@ -20,7 +20,7 @@ function Feature() {
           <div className="row">
             <div className="col-1-of-3">
               <div className="card card__1">
-                <img src={feat1} className="card__img" alt="features image" />
+                <img src={feat1} className="card__img" alt="features 1" />
                 <div className="card__content">
                   <h1 className="feature__card__heading u-margin-bottom-small">
                     Save More
@@ -36,7 +36,7 @@ function Feature() {
             </div>
             <div className="col-1-of-3">
               <div className="card card__2">
-                <img src={feat2} className="card__img" alt="features image" />
+                <img src={feat2} className="card__img" alt="features 2" />
                 <div className="card__content">
                   <h1 className="feature__card__heading u-margin-bottom-small">
                     Invest in gold
@@ -52,7 +52,7 @@ function Feature() {
             </div>
             <div className="col-1-of-3">
               <div className="card card__3">
-                <img src={feat3} className="card__img" alt="features image" />
+                <img src={feat3} className="card__img" alt="features 3" />
                 <div className="card__content">
                   <h1 className="feature__card__heading u-margin-bottom-small">
                     Flexible Loans
@@ -70,7 +70,7 @@ function Feature() {
           <div className="row">
             <div className="col-1-of-2">
               <div className="card card__4">
-                <img src={feat4} className="card__img" alt="features image" />
+                <img src={feat4} className="card__img" alt="features 4" />
                 <div className="card__content">
                   <h1 className="feature__card__heading u-margin-bottom-small">
                     Truly Digital
@@ -86,7 +86,7 @@ function Feature() {
             </div>
             <div className="col-1-of-2">
               <div className="card card__5">
-                <img src={feat5} className="card__img" alt="features image" />
+                <img src={feat5} className="card__img" alt="features 5" />
                 <div className="card__content">
                   <h1 className="feature__card__heading u-margin-bottom-small">
                     Trade and grow
