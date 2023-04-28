@@ -5,6 +5,21 @@ import "./Header.css"
 function Header() {
   const [isOpen, setOpen] = useState(false)
 
+  //Smooth scroll
+  function scrollSmooth(e) {
+    e.preventDefault();
+    setOpen(false)
+    let id = e.target.getAttribute('href');
+    let sid = document.querySelector(id);
+    let idcord = sid.getBoundingClientRect();
+    window.scrollTo({
+      left: idcord.left + window.pageXOffset,
+      top: idcord.top + window.pageYOffset,
+      behavior: 'smooth',
+    });
+  }
+
+
   return (
     <header className="header">
       <nav className="nav">
@@ -13,16 +28,13 @@ function Header() {
         </div>
         <ul className={`nav__ul ${isOpen ? 'visible' : ''}`}>
           <li className="nav__li">
-            <a href="#features" className="nav__link" onClick={e => setOpen(false)}>Features</a>
+            <a href="#features" className="nav__link" onClick={e => scrollSmooth(e)}>Features</a>
           </li>
           <li className="nav__li">
-            <a href="#operations" className="nav__link" onClick={e => setOpen(false)}>Operations</a>
+            <a href="#operations" className="nav__link" onClick={e => scrollSmooth(e)}>Operations</a>
           </li>
           <li className="nav__li">
-            <a href="#testimonials" className="nav__link" onClick={e => setOpen(false)}>Testimonials</a>
-          </li>
-          <li className="nav__li">
-            <a href="#cta" className="nav__link" onClick={e => setOpen(false)}>Open Account</a>
+            <a href="#testimonials" className="nav__link" onClick={e => scrollSmooth(e)}>Testimonials</a>
           </li>
         </ul>
 

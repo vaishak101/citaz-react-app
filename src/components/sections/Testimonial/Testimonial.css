@@ -1,12 +1,11 @@
 .testimonials {
-  margin: 50px auto;
+  margin: 75px auto;
 }
 .slider {
   max-width: 100rem;
   height: 55rem;
   margin: 0 auto;
   position: relative;
-  padding-bottom: 5rem;
   overflow: hidden;
 }
 .slider__btn {
@@ -51,7 +50,7 @@
 }
 @media (max-width: 28.25em) {
   .slider {
-    height: 75rem;
+    /* height: 75rem; */
   }
 }
 .slide {
@@ -130,7 +129,7 @@
     align-items: flex-start;
   }
 }
-@media (max-width: 56.25em) {
+/* @media (max-width: 56.25em) {
   .slide {
     top: 4%;
   }
@@ -144,4 +143,4 @@
   .slide {
     top: 15%;
   }
-}
+} */

@@ -4,8 +4,6 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer__logo-box u-center-text u-margin-bottom-big">
-        <a href="#">
-          <img src="img/logo/logo.png" className="footer__logo" alt="CITAZ BANK Logo" /></a>
         <a className="footer__img-name u-margin-top-small">CITAZ BANK LTD</a>
       </div>
       <div className="footer__link-box u-margin-bottom-medium">

@@ -1,6 +1,10 @@
+import { useState } from "react";
 import "./TabSection.css"
 
 function TabSection() {
+
+  const [tabNum, setTabNum] = useState(1);
+
   return (
     <section className="operations section" id="operations">
       <div className="container">
@@ -12,13 +16,12 @@ function TabSection() {
         </div>
         <div className="operations__container">
           <div className="operations__container--btn">
-            <button className="operations__btn operations__btn--1 op--active" data-btn="1">
-              Online Banking</button><button className="operations__btn operations__btn--2" data-btn="2">
-              Mobile Banking</button><button className="operations__btn operations__btn--3" data-btn="3">
-              24x7 Support
+            <button className={`${tabNum === 1 ? "op--active" : ""} operations__btn operations__btn--1`} onClick={() => setTabNum(1)}>Online Banking</button>
+            <button className={`${tabNum === 2 ? "op--active" : ""} operations__btn operations__btn--2`} onClick={() => setTabNum(2)}>Mobile Banking</button>
+            <button className={`${tabNum === 3 ? "op--active" : ""} operations__btn operations__btn--3`} onClick={() => setTabNum(3)}>24x7 Support
             </button>
           </div>
-          <div className="tab tab__1 tab__active">
+          <div className={`tab tab__1 ${tabNum === 1 ? 'tab__active' : ''}`}>
             <h1 className="heading-secondary--operations u-margin-bottom-small">
               Online Banking is Smooth
             </h1>
@@ -33,7 +36,7 @@ function TabSection() {
               ipsa vel?
             </p>
           </div>
-          <div className="tab tab__2">
+          <div className={`tab tab__2 ${tabNum === 2 ? 'tab__active' : ''}`}>
             <h1 className="heading-secondary--operations u-margin-bottom-small">
               Apps for the new generation
             </h1>
@@ -49,7 +52,7 @@ function TabSection() {
               ipsa vel?
             </p>
           </div>
-          <div className="tab tab__3">
+          <div className={`tab tab__3 ${tabNum === 3 ? 'tab__active' : ''}`}>
             <h1 className="heading-secondary--operations u-margin-bottom-small">
               Call us anytime
             </h1>
@@ -67,7 +70,7 @@ function TabSection() {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   )
 }
 
