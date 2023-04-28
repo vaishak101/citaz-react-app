@@ -1,14 +1,19 @@
+import { useEffect } from "react";
 import feat1 from './../../../assets/img/features/feature-1.jpg'
 import feat2 from './../../../assets/img/features/feature-2.jpg'
 import feat3 from './../../../assets/img/features/feature-3.jpg'
 import feat4 from './../../../assets/img/features/feature-4.jpg'
 import feat5 from './../../../assets/img/features/feature-5.jpg'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "./Feature.css"
 
 function Feature() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
-    <section className="features section" id="features">
+    <section data-aos="fade-left" className="features section" id="features">
       <div className="container">
         <div className="features__text-box">
           <h1 className="heading-primary">

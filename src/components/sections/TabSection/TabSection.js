@@ -1,12 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "./TabSection.css"
 
 function TabSection() {
 
   const [tabNum, setTabNum] = useState(1);
-
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
-    <section className="operations section" id="operations">
+    <section data-aos="fade-right" className="operations section" id="operations">
       <div className="container">
         <div className="features__text-box">
           <h1 className="heading-primary">

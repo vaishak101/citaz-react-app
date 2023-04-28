@@ -5,7 +5,8 @@ import u3 from "./../../../assets/img/user/user-3.jpg"
 import u4 from "./../../../assets/img/user/user-4.jpg"
 import u5 from "./../../../assets/img/user/user-5.jpg"
 import { useEffect } from "react"
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Testimonial() {
 
@@ -14,6 +15,7 @@ function Testimonial() {
   let maxSlide;
 
   useEffect(() => {
+    AOS.init();
     slide = document.querySelectorAll('.slide');
     curSlide = 0;
     maxSlide = slide.length - 1;
@@ -64,7 +66,7 @@ function Testimonial() {
 
 
   return (
-    <section className="testimonials section" id="testimonials">
+    <section data-aos="fade-up" data-aos-anchor-placement="center-bottom" className="testimonials section" id="testimonials">
       <div className="container">
         <div className="features__text-box u-margin-bottom-medium">
           <h1 className="heading-primary">

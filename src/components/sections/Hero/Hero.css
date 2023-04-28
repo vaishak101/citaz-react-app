@@ -15,15 +15,16 @@
   max-width: 500px;
   border-radius: 20px;
   overflow: hidden;
+  transform: translateY(0) rotate(-10deg) scale(1.1);
+  animation: moveInBottom 0.5s ease-out 0.65s;
+  animation-fill-mode: backwards;
 }
 .hero__img {
   width: 100%;
   /* position: absolute;
   left: 10%;
   bottom: 50%; */
-  /* transform: translateY(45%) rotate(-10deg) scale(1.1); */
-  /* animation: moveInBottom 0.5s ease-out 0.65s; */
-  /* animation-fill-mode: backwards; */
+  /*  */
 }
 
 .hero__text-box {
@@ -31,8 +32,8 @@
   right: 0;
   bottom: 40%; */
   /* width: 50%; */
-  /* animation: moveInRight 0.5s ease-out 0.65s; */
-  /* animation-fill-mode: backwards; */
+  animation: moveInRight 0.5s ease-out 0.65s;
+  animation-fill-mode: backwards;
 }
 
 .hero .heading-primary {
@@ -60,15 +61,15 @@
     /* left: 50%; */
     /* bottom: 40%; */
     /* transform: translate(-50%, 45%) rotate(-10deg) scale(1.5); */
-    /* animation: moveInBottomTab 0.5s ease-out 0.65s;
-    animation-fill-mode: backwards; */
+    animation: moveInBottomTab 0.5s ease-out 0.65s;
+    animation-fill-mode: backwards;
   }
   .hero__text-box {
     /* top: 15%;
     left: 50%; */
     /* transform: translateX(-50%); */
-    /* animation: moveInRightTab 0.5s ease-out 0.65s; */
-    /* animation-fill-mode: backwards; */
+    animation: moveInRightTab 0.5s ease-out 0.65s;
+    animation-fill-mode: backwards;
   }
 }
 
