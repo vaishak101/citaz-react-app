@@ -1,0 +1,135 @@
+.header {
+  /* position: relative; */
+  /* height: 100vh; */
+  padding: 20px 10px;
+}
+.hamburger-react {
+  display: none;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo_wrap h1 {
+  font-size: 3rem;
+}
+.nav__ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+@media (max-width: 37.5em) {
+  .hamburger-react {
+    display: block;
+    z-index: 99999999999999;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .nav__ul {
+    background-color: #0beef9;
+    background-image: linear-gradient(215deg, #48a9fe 0, #0beef9 64%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* opacity: 0; */
+    visibility: hidden;
+    z-index: 9999999999999;
+  }
+}
+.nav__link:link,
+.nav__link:visited {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #40514e;
+  font-weight: 300;
+}
+.nav__link:active,
+.nav__link:hover {
+  font-weight: 400;
+}
+.nav__mob--cont {
+  padding: 0 2rem;
+  align-items: center;
+  justify-content: space-between;
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+}
+@media (max-width: 37.5em) {
+  .nav__mob--cont {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+  }
+}
+.nav__mob-btn {
+  width: 30px;
+  height: 30px;
+  /* z-index: 92543121222; */
+}
+.nav__mob-btn svg {
+  width: 100%;
+  height: auto;
+}
+.nav__mob-btn--close {
+  background: 0 0;
+  border: none;
+  color: #40514e;
+  font-size: 4rem;
+  position: absolute;
+  top: 3%;
+  right: 4%;
+  display: none;
+}
+@media (max-width: 37.5em) {
+  .nav__mob-btn--close {
+    display: block;
+  }
+}
+.nav__logo--mob {
+  background-color: #40514e;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+}
+.nav__sticky {
+  z-index: 92437123123124124991;
+  position: fixed;
+  background-color: #0beef9;
+  background-image: linear-gradient(215deg, #48a9fe 0, #0beef9 64%);
+  opacity: 0.9;
+  transition: opacity 0.5s ease;
+}
+.nav__sticky:hover {
+  opacity: 1;
+}
+@media (max-width: 37.5em) {
+  .nav__sticky {
+    position: absolute;
+  }
+}
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
+.nav__mob-btn,
+.nav__mob-btn--close {
+}
+button svg {
+  width: 100%;
+}

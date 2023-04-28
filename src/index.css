@@ -1,6 +1,42 @@
-body {
+*,
+::after,
+::before {
   margin: 0;
-  font-family: "Rubik", sans-serif;
+  padding: 0;
+  box-sizing: inherit;
 }
-
-/* 300 , 400 , 400-i , 700 */
+html {
+  font-size: 62.5%;
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 37.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+body {
+  font-family: Chivo, sans-serif;
+  box-sizing: border-box;
+  background-color: #f3f6f6;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  scroll-behavior: smooth;
+}
